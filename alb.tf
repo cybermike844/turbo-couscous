@@ -20,7 +20,7 @@ resource "aws_lb_target_group_attachment" "attachment" {
     aws_instance.three-tier-instance,
   ]
 }
-resource "aws_lb_target_group_attachment" "attachment" {
+resource "aws_lb_target_group_attachment" "attachment1" {
   target_group_arn = aws_lb_target_group.external-alb.arn
   target_id        = aws_instance.three-tier-instance1.id
   port             = 80
